@@ -12,6 +12,7 @@ import raisetech.StudentManagement.data.Student;
 
 @Service
 public class StudentService {
+
   private StudentRepository repository;
 
   @Autowired
