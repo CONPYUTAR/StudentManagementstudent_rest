@@ -27,7 +27,7 @@ public class StudentService {
   public StudentDetail searchStudent(String id) {
     Student student = repository.searchStudent(id);
     List<StudentsCourses> studentsCourses = repository.searchStudentsCourses(student.getId());
-    StudentDetail studentDetail = new StudentDetail();
+    StudentDetail studentDetail  = new StudentDetail();
     studentDetail.setStudent(student);
     studentDetail.setStudentsCourses(studentsCourses);
     return studentDetail;

@@ -18,7 +18,7 @@ public class Application {
 
 //	@Autowired
 //	private StudentRepository repository;
-//
+
 //	private String name = "Enami Kouji";
 //	private String age = "37";
 
