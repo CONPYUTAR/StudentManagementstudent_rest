@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <title>Student List</title>
+  <title>受講生一覧</title>
 </head>
 <body>
-<h1>Student List</h1>
+<h1>受講生一覧</h1>
 <table border="1">
   <thead>
   <tr>
@@ -34,11 +34,11 @@
     <td th:text="${studentDetail.student.age}">20</td>
     <td th:text="${studentDetail.student.sex}">男性</td>
     <td th:text="${studentDetail.student.remark}">特になし</td>
-    <td th:text="${studentDetail.student.isDeleted ? 'Yes' : 'No'}"></td>
-    <td>
-      <!-- 削除リンクを追加 -->
-      <a th:href="@{/deleteStudent/{id}(id=${studentDetail.student.id})}"
-         onclick="return confirm('本当に削除しますか？');">削除</a>
+    <td
+    onclick="return confirm('本当に削除しますか？');">削除</a>
+
+    <input type="checkbox" th:checked="${studentDetail.student.isDeleted}"/>
+  </td>
   </tr>
   </tbody>
 </table>

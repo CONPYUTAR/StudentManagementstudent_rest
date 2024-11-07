@@ -12,22 +12,22 @@ import raisetech.StudentManagement.data.StudentsCourses;
 import raisetech.StudentManagement.repository.StudentRepository;
 
 @SpringBootApplication
-@RestController
- @MapperScan("raisetech.StudentManagement.repository")  // パッケージを指定
+//@RestController
+// @MapperScan("raisetech.StudentManagement.repository")  // パッケージを指定
 public class Application {
 
-	@Autowired
-	private StudentRepository repository;
+//	@Autowired
+//	private StudentRepository repository;
 
-	private String name = "Enami Kouji";
-	private String age = "37";
+//	private String name = "Enami Kouji";
+//	private String age = "37";
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
 
-  @GetMapping("/student")
-	public List<Student> getStudentList() {
-		return repository.search();
-}
+//  @GetMapping("/student")
+//	public List<Student> getStudentList() {
+//		return repository.search();
+//}
 	}
